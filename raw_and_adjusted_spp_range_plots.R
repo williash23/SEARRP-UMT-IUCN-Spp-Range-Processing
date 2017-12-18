@@ -71,8 +71,8 @@ for (s in 1:nrow(sf_df_mammals)){
 		geom_sf(data = sarawak_sf, colour = "grey50", fill = "grey80") +
 		geom_sf(data = kali_sf, colour = "grey50", fill = "grey70") +
 		coord_sf(crs = st_crs(32650)) +
-		xlab("Latitude") +
-		ylab("Longitude") +
+		xlab("Longitude") +
+		ylab("Latitude") +
 		xlim(315000, 755000) +
 		ylim(455000, 815000) +
 		ggtitle(paste0("Raw and Adjusted Range", " - ", nam)) +
@@ -111,8 +111,8 @@ for (s in 1:nrow(sf_amphibians_elev_adj)){
 		geom_sf(data = sarawak_sf, colour = "grey50", fill = "grey80") +
 		geom_sf(data = kali_sf, colour = "grey50", fill = "grey70") +
 		coord_sf(crs = st_crs(32650)) +
-		xlab("Latitude") +
-		ylab("Longitude") +
+		xlab("Longitude") +
+		ylab("Latitude") +
 		xlim(315000, 755000) +
 		ylim(455000, 815000) +
 		ggtitle(paste0("Raw range", " - ", nam)) +
@@ -151,8 +151,8 @@ for (s in 1:nrow(sf_df_birds)){
 		geom_sf(data = sarawak_sf, colour = "grey50", fill = "grey80") +
 		geom_sf(data = kali_sf, colour = "grey50", fill = "grey70") +
 		coord_sf(crs = st_crs(32650)) +
-		xlab("Latitude") +
-		ylab("Longitude") +
+		xlab("Longitude") +
+		ylab("Latitude") +
 		xlim(315000, 755000) +
 		ylim(455000, 815000) +
 		ggtitle(paste0("Raw range", " - ", nam)) +
@@ -162,6 +162,19 @@ for (s in 1:nrow(sf_df_birds)){
 	ggsave(filename = paste(path_spat_dat, "/plots/birds/", nam, "_raw_adj_range.jpeg", sep = ""), plot = range_p)
     }   
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 #####  RAW RANGES  ##### 	
@@ -194,8 +207,8 @@ for (s in 1:nrow(sf_df_mammals)){
 		geom_sf(data = sarawak_sf, colour = "grey50", fill = "grey80") +
 		geom_sf(data = kali_sf, colour = "grey50", fill = "grey70") +
 		coord_sf(crs = st_crs(32650)) +
-		xlab("Latitude") +
-		ylab("Longitude") +
+		xlab("Longitude") +
+		ylab("Latitude") +
 		xlim(315000, 755000) +
 		ylim(455000, 815000) +
 		ggtitle(paste0("Raw and Adjusted Range", " - ", nam)) +
@@ -234,8 +247,8 @@ for (s in 1:nrow(sf_amphibians_elev_adj)){
 		geom_sf(data = sarawak_sf, colour = "grey50", fill = "grey80") +
 		geom_sf(data = kali_sf, colour = "grey50", fill = "grey70") +
 		coord_sf(crs = st_crs(32650)) +
-		xlab("Latitude") +
-		ylab("Longitude") +
+		xlab("Longitude") +
+		ylab("Latitude") +
 		xlim(315000, 755000) +
 		ylim(455000, 815000) +
 		ggtitle(paste0("Raw range", " - ", nam)) +
@@ -274,8 +287,8 @@ for (s in 1:nrow(sf_df_birds)){
 		geom_sf(data = sarawak_sf, colour = "grey50", fill = "grey80") +
 		geom_sf(data = kali_sf, colour = "grey50", fill = "grey70") +
 		coord_sf(crs = st_crs(32650)) +
-		xlab("Latitude") +
-		ylab("Longitude") +
+		xlab("Longitude") +
+		ylab("Latitude") +
 		xlim(315000, 755000) +
 		ylim(455000, 815000) +
 		ggtitle(paste0("Raw range", " - ", nam)) +
@@ -328,8 +341,8 @@ for (s in 1:nrow(sf_df_mammals_elev_adj)){
 		geom_sf(data = sarawak_sf, colour = "grey50", fill = "grey80") +
 		geom_sf(data = kali_sf, colour = "grey50", fill = "grey70") +
 		coord_sf(crs = st_crs(32650)) +
-		xlab("Latitude") +
-		ylab("Longitude") +
+		xlab("Longitude") +
+		ylab("Latitude") +
 		xlim(315000, 755000) +
 		ylim(455000, 815000) +
 		ggtitle(paste0("Adjusted range", " - ", nam)) +
@@ -365,8 +378,8 @@ for (s in 1:nrow(sf_df_amphibians_elev_adj)){
 		geom_sf(data = sarawak_sf, colour = "grey50", fill = "grey80") +
 		geom_sf(data = kali_sf, colour = "grey50", fill = "grey70") +
 		coord_sf(crs = st_crs(32650)) +
-		xlab("Latitude") +
-		ylab("Longitude") +
+		xlab("Longitude") +
+		ylab("Latitude") +
 		xlim(315000, 755000) +
 		ylim(455000, 815000) +
 		ggtitle(paste0("Adjusted range", " - ", nam)) +
@@ -401,8 +414,8 @@ for (s in 1:nrow(sf_df_birds_elev_adj)){
 		geom_sf(data = sarawak_sf, colour = "grey50", fill = "grey80") +
 		geom_sf(data = kali_sf, colour = "grey50", fill = "grey70") +
 		coord_sf(crs = st_crs(32650)) +
-		xlab("Latitude") +
-		ylab("Longitude") +
+		xlab("Longitude") +
+		ylab("Latitude") +
 		xlim(315000, 755000) +
 		ylim(455000, 815000) +
 		ggtitle(paste0("Adjusted range", " - ", nam)) +
