@@ -27,8 +27,7 @@ library(dplyr)
 
 
 # =============================================================================
-#  Load input data: this is the output from adjusting the spp ranges based on elevation
-#  constraints, which was done using the script 'adjust_spp_ranges.R'. 
+#  Load input data
 # =============================================================================
 
 	# ----------------------
@@ -36,8 +35,8 @@ library(dplyr)
 	elev <- raster("C:/Users/saraw/Documents/SEARRP_Analyses/processed_spat_data/trans_crop_proj/elev_250m_m.grd")
 
 	# ----------------------
-	#  Forest cover (aggregated to 900m x 900m resolution.
-	cth_for <- raster("C:/Users/saraw/Documents/SEARRP_Analyses/optimization/cth_agg_rc_no_mang.grd")
+	#  Forest cover 
+	acd_for <- raster("C:/Users/saraw/Documents/SEARRP_Analyses/optimization/acd_rc_agg.grd")
 	
 	# ----------------------
 	#  Polygonizer() function.
@@ -58,12 +57,12 @@ library(dplyr)
 	
 	
 # =============================================================================
-#  Resample elevation to match CTH forest cover.
+#  Resample elevation to match forest cover.
 # =============================================================================
 
 	# ----------------------
 	#  Resample
-	elev_rs <- resample(elev, cth_for, "bilinear")
+	elev_rs <- resample(elev, acd_for, "bilinear")
 
 	
 	
